@@ -1,1 +1,22 @@
-[{"pk": 1, "model": "products.category", "fields": {"name": "membership", "friendly_name": "Membership"}}, {"pk": 2, "model": "products.category", "fields": {"name": "class_bundles", "friendly_name": "Class Bundles"}}, {"pk": 3, "model": "products.category", "fields": {"name": "merchandise", "friendly_name": "Merchandise"}}]
+[{
+    "pk": 1,
+    "model": "products.category",
+    "fields": {
+        "name": "membership",
+        "friendly_name": "Membership"
+    }
+}, {
+    "pk": 2,
+    "model": "products.category",
+    "fields": {
+        "name": "class_bundles",
+        "friendly_name": "Class Bundles"
+    }
+}, {
+    "pk": 3,
+    "model": "products.category",
+    "fields": {
+        "name": "merchandise",
+        "friendly_name": "Merchandise"
+    }
+}]
