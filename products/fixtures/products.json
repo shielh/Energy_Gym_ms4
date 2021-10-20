@@ -7,7 +7,6 @@
             "description": "Just Gym. Keeping it Simple",
             "price": 60.00,
             "category": 1,
-            "rating": 0,
             "image": "gym_membership1.jpg"
         }
     },
@@ -19,7 +18,6 @@
             "description": "Medieval II: Total War is a strategy video game developed by The Creative Assembly and published by Sega. It was released for Microsoft Windows on 10 November 2006. Feral Interactive published versions of the game for MacOS and Linux on 14 January 2016. It is the sequel to 2002's Medieval: Total War and the fourth title in the Total War series.\"Gameplay is divided between a turn-based strategic campaign and real-time tactical battles. The campaign is set between the years 1080 and 1530. Players assume control of a medieval state, referred to in the game as a faction, and control its government, economy, military, diplomacy, and religion on a map spanning most of Europe, North Africa, and the Middle East. In battles, players control groups of soldiers and engage in combat with enemy forces.",
             "price": 110.00,
             "category": 1,
-            "rating": 0,
             "image": "gym_membership2.jpg"
         }
     },
@@ -31,7 +29,6 @@
             "description": "Play as the ruler of one of 175 countries through World Wars II and III. As the Allies and the Soviet Union clash in Europe, the fate of the world hangs in the balance.",
             "price": 14.99,
             "category": 1,
-            "rating": 0,
             "image": "gym_membership3.jpg"
         }
     },
@@ -43,7 +40,6 @@
             "description": "Hearts of Iron III lets you play the most engaging conflict in world history, World War 2, on all fronts as any country and through multiple different scenarios. Guide your nation to glory between 1936 and 1948 and wage war, conduct diplomacy and build your industry in the most detailed World War 2 game ever made.",
             "price": 9.99,
             "category": 1,
-            "rating": 0,
             "image": "gym_membership4.jpg"
         }
     },
@@ -55,7 +51,6 @@
             "description": "Experience an amazing adventure in one of the most fascinating universes! Amidst conspiracy and betrayal, try to survive the orchestrated machinations around the Iron Throne.",
             "price": 14.99,
             "category": 2,
-            "rating": 0,
             "image": "class_bundle1.jpg"
         }
     },
@@ -67,7 +62,6 @@
             "description": "It is four thousand years before the Galactic Empire and hundreds of Jedi Knights have fallen in battle against the ruthless Sith. You are the last hope of the Jedi Order. Can you master the awesome power of the Force on your quest to save the Republic? Or will you fall to the lure of the dark side?",
             "price": 24.99,
             "category": 2,
-            "rating": 0,
             "image": "class_bundle2.jpg"
         }
     },
@@ -79,7 +73,6 @@
             "description": "5 years after the events of the award winning original, the Sith are on the verge of crushing the Old Republic. As a lone Jedi, will you follow the light side or succumb to the dark?",
             "price": 9.99,
             "category": 2,
-            "rating": 0,
             "image": "class_bundle3.jpg"
         }
     },
@@ -91,7 +84,6 @@
             "description": "It is a time of war in Europe. Driven by new ideas of Enlightenment, the hearts of men and women across the continent are inflamed with dreams of freedom and glory. This is the moment for a military genius to forge himself a name to be remembered throughout all eternity. This is your moment.",
             "price": 4.99,
             "category": 2,
-            "rating": 0,
             "image": "class_bundle4.jpg"
         }
     },
@@ -103,7 +95,6 @@
             "description": "Bethesda Game Studios, the award-winning creators of Fallout 3 and The Elder Scrolls V: Skyrim, welcome you to the world of Fallout 4 – their most ambitious game ever, and the next generation of open-world gaming.",
             "price": 19.99,
             "category": 3,
-            "rating": 0,
             "image": "fallout-4.jpg"
         }
     },
@@ -115,7 +106,6 @@
             "description": "The year is 2052 and the world is a dangerous and chaotic place. Terrorists operate openly - killing thousands; drugs, disease and pollution kill even more. The world's economies are close to collapse and the gap between the insanely wealthy and the desperately poor grows ever wider.",
             "price": 6.99,
             "category": 3,
-            "rating": 0,
             "image": "deus-ex.jpg"
         }
     },
@@ -127,7 +117,6 @@
             "description": "Age of Empires II: The Age of Kings is a real-time strategy video game developed by Ensemble Studios and published by Microsoft. Released in 1999 for Microsoft Windows and Macintosh, it is the second game in the Age of Empires series. The Age of Kings is set in the Middle Ages and contains thirteen playable civilizations. Players aim to gather resources, which they use to build towns, create armies, and defeat their enemies. There are five historically based campaigns, which constrict the player to specialized and story-backed conditions, as well as three additional single-player game modes; multiplayer is also supported.",
             "price": 9.99,
             "category": 3,
-            "rating": 0,
             "image": "aoe-2.jpg"
         }
     },
@@ -139,7 +128,6 @@
             "description": "The classic real time strategy game that transports players to a time when heroes did battle with monsters of legend and the gods intervened in the affairs of mortals. Use mythological creatures like Minotaurs and Cyclopes to bolster your armies' strength. Call upon the gods for assistance in flattening enemy towns with meteors or scatter opposing troops with lightning storms.",
             "price": 4.99,
             "category": 3,
-            "rating": 0,
             "image": "age-of-mythology.jpg"
         }
     },
@@ -151,7 +139,6 @@
             "description": "Black Ops Cold War drops fans into the depths of the Cold War’s volatile geopolitical battle of the early 1980s.",
             "price": 48,
             "category": 3,
-            "rating": 0,
             "image": "cod-bo-cold-war.jpg"
         }
     },
@@ -163,7 +150,6 @@
             "description": "Players will assume the role of Ethan Winters and experience every up-close battle and terrifying pursuit through a first-person perspective.",
             "price": 60,
             "category": 3,
-            "rating": 0,
             "image": "resident-evil-village.jpg"
         }
     },
@@ -175,7 +161,6 @@
             "description": "From PlayStation Studios and Bluepoint Games comes a remake of the PlayStation classic, Demon's Souls. Entirely rebuilt from the ground up and masterfully enhanced, this remake introduces the horrors of a fog-laden, dark fantasy land to a whole new generation of gamers. Those who've faced its trials and tribulations before, can once again challenge the darkness in stunning visual quality with incredible performance.\" In his quest for power, the 12th King of Boletaria, King Allant channelled the ancient Soul Arts, awakening a demon from the dawn of time itself, The Old One. With the summoning of The Old One, a colourless fog swept across the land, unleashing nightmarish creatures that hungered for human souls. Those whose souls were stripped from them, lost their minds - left only with the desire to attack the sane that remained.\" Now, Boletaria is cut off from the outside world, and the knights who dare penetrate the deep fog to free the land from its plight, are never seen again. As a lone warrior who has braved the baneful fog, you must face the hardest of challenges to earn the title 'Slayer of Demons' and send The Old One back to its slumber.",
             "price": 60,
             "category": 3,
-            "rating": 0,
             "image": "demons-souls.jpg"
         }
     }
