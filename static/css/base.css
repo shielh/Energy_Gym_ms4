@@ -20,16 +20,15 @@ body {
     top: 50%;
 }
 
-/* Media Queries */
-@media (min-width: 1200px){
-    .container {
-        max-width: 85%;
-    }
+/* Products page */
+.overlay{
+    margin-top: 48px;
 }
 
+/* Media Queries */
 @media (max-width: 768px){
     .home-video {
-        position:absolute;
+    position:absolute;
     z-index:-1;
     top:0;
     left:0;

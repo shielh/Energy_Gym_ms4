@@ -60,6 +60,9 @@ We both have similar opinions on how our site shoud look and function. We want a
 - As a user I want to be able to select a membership appropriate for my life
 - As a user I want to be able to pay for the membership option securely
 - 
+- 
+- 
+- 
 
 ### The Scope Plane
 #### Features
