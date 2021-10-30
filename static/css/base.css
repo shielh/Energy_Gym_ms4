@@ -20,9 +20,18 @@ body {
     top: 50%;
 }
 
+.bag-icon, .bag-text{
+    color: #fff;
+}
+
 /* Products page */
 .overlay{
     margin-top: 48px;
+}
+
+/* Shopping Bag */
+.shopping-container{
+    padding-top: 48px;
 }
 
 /* Media Queries */
