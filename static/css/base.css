@@ -7,10 +7,18 @@ body {
     background-size: cover;
 }
 
+.banner-bg {
+    background-color: #6c757d;
+}
+
+#delivery-banner {
+    padding-bottom: 36px;
+}
+
 .home-video {
     position: relative;
     z-index: -1;
-    margin-top: 48px;
+    margin-top: 84px;
     width: auto;
 }
 
