@@ -11,7 +11,12 @@ def all_products(request):
 
     products = Product.objects.all()
     query = None
-    categories = None
+    categories = list(Category.objects.all())
+
+    category_products = {c.name:(c, []) for c in categories }
+    for product in products:
+        category_products[product.category.name][1].append(product)
+
 
     if request.GET:
         if 'category' in request.GET:
@@ -29,9 +34,10 @@ def all_products(request):
             products = products.filter(queries)
 
     context = {
-        'products': products,
+        'products': list(products),
         'search_term': query,
         'current_categories': categories,
+        'cps': category_products,
     }
 
     return render(request, 'products/products.html', context)
