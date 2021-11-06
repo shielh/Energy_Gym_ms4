@@ -18,6 +18,20 @@ body {
     width: auto;
 }
 
+/* Custom Toast messages */ 
+.custom-toast {
+    overflow: visible;
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 99999999999;
+}
+
+.toast.show {
+    display: block;
+    opacity: 1;
+}
+
 .video-button {
     position: absolute;
     left: 50%;
@@ -41,6 +55,7 @@ body {
 .bag-footer {
      text-align: right;
  }
+
 
 /* Media Queries */
 @media (max-width: 768px){
