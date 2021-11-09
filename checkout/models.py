@@ -27,7 +27,7 @@ class Order(models.Model):
 
     def _generate_order_id(self):
         """ 
-        Generate unique order ID using UUID import 
+        Generate unique order ID using UUID import
         """
         return uuid.uuid4().hex.upper()
 
