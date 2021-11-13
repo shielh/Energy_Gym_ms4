@@ -58,14 +58,41 @@ We both have similar opinions on how our site shoud look and function. We want a
 - As a user I want the site to be responsive across all devices
 - As I user I want to be able to easily create an account
 - As a user I want to be able to select a membership appropriate for my life
-- As a user I want to be able to pay for the membership option securely
+- As a user, I want to be able to view my order in the cart before paying to review
+- As a user I want to be able to pay securely
+- As a logged in user I want to be able to leave a review on the review section
+- As a user, I want to be able to view other users reviews
 - 
 - 
-- 
+
+### User stories - Admin
+- As an admin user, I want to be able to add, edit and delete products on the site
+- As an admin user, I want to be able to delete reviews that might contain harmful or inappropriate content
 - 
 
 ### The Scope Plane
 #### Features
+##### Site Wide Features
+- Navbar with site logo  "Energy", directing users back to the home page
+- Navbar containing links to Home, About, Products, Account and Cart
+- Navbar containing search bar
+- Responsive navbar on mobile device, collapsing into burger icon
+
+##### Home page
+- Hero-video on landing page
+- Button in middle of video prompting user to sign up 
+- Description of type of products available
+- Button linking to products page
+
+##### About page
+-
+
+##### Products page
+- Contains headers corresponding to category type of products
+- Contains product images, price, name and description
+- Each product image contains a link to product description page
+- 
+
 ##### F
 
 
@@ -137,3 +164,48 @@ Throughout development, three primary commands were used with the CLI [Git](http
 - "git add" followed by the file name you wish to stage or "git add ." stages all unstaged files
 - "git commit -m" followed by a detailed comprehensive comment pertaining to the changes made since the previous commit
 - "git push" makes all changes visible on the GitHub Repo
+
+In order to deploy the site to Heroku, the four following steps must be followed:
+1. Create a requirements.txt file that contains the names of packages being used in Python. It is critical to update this file if other packages or modules are installed during project development to reflect the current requirements by using the following command:
+- pip freeze --local > requirements.txt
+2. Create a Procfile that contains the name of the application file so that Heroku knows what to run. Ensure to remove the blank line at the beginning of the Procfile as this may cause problems.
+3. Push these files to GitHub.
+4. Install `psycopg2` and `dj_datatbase_url` in your workspace cli.
+
+When the above steps are complete, the app is ready to deploy to Heroku:
+
+### Deployment Steps
+
+1. Log into Heroku .
+2. Click the New button.
+3. Click the option to create a new app.
+4. Enter the app name in lowercase letters.
+5. Select the correct geographical region.
+
+### Connect Heroku app to Github repository
+
+1. In heroku select the deploy tab.
+2. Click github button.
+3. Enter the repository name and click search.
+4. Select the relevant repository and click connect. 
+
+### Add Heroku Postgres Database
+1. Click the resources tab in heroku.
+2. Under Add-ons search for heroku postgres.
+3. Click on heroku postgres when it appears. 
+4. Select the Hobby Dev-Free option in plans. 
+5. Click submit order form.
+
+### Setting up environment variables
+1. In the heroku settings click the reveal config vars button and set the following variables:
+    - AWS_ACCESS_KEY_ID
+    - AWS_SECRET_ACCESS_KEY
+    - DATABASE_URL
+    - EMAIL_HOST_PASS
+    - EMAIL_HOST_USER
+    - SECRET_KEY
+    - STRIPE_PRICE_ID
+    - STRIPE_PUBLIC_KEY
+    - STRIPE_SECRET_KEY
+    - STRIPE_WH_SECRET
+    - USE_AWS
