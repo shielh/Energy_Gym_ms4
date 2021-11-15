@@ -29,13 +29,13 @@ def checkout(request):
         }
         order_form = OrderForm(form_data)
         if order_form.is_valid():
-            order = order_form.save()
+            order_id = order_form.save()
             for item_id, item_data in bag.items():
                 try:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
-                            order=order,
+                            order_id=order_id,
                             product=product,
                             quantity=item_data,
                         )
@@ -49,7 +49,7 @@ def checkout(request):
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order.order_id]))
+            return redirect(reverse('checkout_success', args=[order_id.order_id]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
