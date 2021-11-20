@@ -1,0 +1,172 @@
+[{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "membership",
+        "friendly_name": "Membership"
+    }
+}, {
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "class_bundles",
+        "friendly_name": "Class Bundles"
+    }
+}, {
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "merchandise",
+        "friendly_name": "Merchandise"
+    }
+}, {
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "name": "1 Month Gym Membership",
+        "description": "1 Month Just Gym. Keeping it Simple",
+        "price": "60.00",
+        "category": 1,
+        "image": "gym_membership1.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "name": "3 Months Gym Membership",
+        "description": "3 Months Just Gym. Keeping it Simple",
+        "price": "110.00",
+        "category": 1,
+        "image": "gym_membership2.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "name": "6 Months Gym Membership",
+        "description": "6 Months Just Gym. Keeping it Simple",
+        "price": "200.00",
+        "category": 1,
+        "image": "gym_membership3.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "name": "1 Year Gym Membership",
+        "description": "1 Year Just Gym. Keeping it Simple",
+        "price": "300.00",
+        "category": 1,
+        "image": "gym_membership4.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "name": "1 Class Bundle",
+        "description": "1 Drop-In Class",
+        "price": "22.00",
+        "category": 2,
+        "image": "class_bundle1.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "name": "3 Class Bundle",
+        "description": "3 Class Bundle",
+        "price": "50.00",
+        "category": 2,
+        "image": "class_bundle2.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "name": "5 Classes Bundle",
+        "description": "5 Class Bundle",
+        "price": "75.00",
+        "category": 2,
+        "image": "class_bundle3.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "name": "10 Classes Bundle",
+        "description": "10 Class Bundle",
+        "price": "100.00",
+        "category": 2,
+        "image": "class_bundle4.jpg"
+    }
+}, {
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Burgundy Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "burgundybeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Black Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "blackbeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Grey Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "greybeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Pink Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "pinkbeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Navy Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "navybeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Biege Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "biegebeanie.PNG"
+    }
+}, {
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "name": "Energy Beanie",
+        "description": "Green Energy Beanie. One Size Fits All",
+        "price": "19.99",
+        "category": 3,
+        "image": "greenbeanie.PNG"
+    }
+}]
