@@ -22,6 +22,10 @@ body {
     width: auto;
 }
 
+/* Login page */
+.btn-outline-black {
+    border: 1px solid black;
+}
 /* Custom Toast messages */ 
 .custom-toast {
     overflow: visible;
@@ -42,7 +46,9 @@ body {
     top: 50%;
 }
 
-.bag-icon, .bag-text{
+.bag-icon, 
+.account-icon,
+.bag-text{
     color: #fff;
 }
 
