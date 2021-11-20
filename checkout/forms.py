@@ -16,11 +16,11 @@ class OrderForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         placeholders = {
             'full_name': 'Full Name',
-            'email': 'Email Address', 
+            'email': 'Email Address',
             'phone_number': 'Phone Number',
-            'address_line1': 'Street Address 1', 
+            'address_line1': 'Street Address 1',
             'address_line2': 'Street Address 2',
-            'town_or_city': 'Town or City', 
+            'town_or_city': 'Town or City',
             'post_code': 'Postal Code',
             'county': 'County',
         }
