@@ -1,1 +1,1 @@
-web: gunicorn energy-gym-ms4.wsgi:application
+web: gunicorn energy_gym.wsgi:application
