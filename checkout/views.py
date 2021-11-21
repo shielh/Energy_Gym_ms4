@@ -133,10 +133,11 @@ def checkout_success(request, order_id):
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_id=order_id)
 
-    profile = UserProfile.objects.get(user=request.user)
-    # Attach users prfile to order
-    order.user_id = profile
-    order.save()
+    if request.user.is_authenticated:
+        profile = UserProfile.objects.get(user=request.user)
+        # Attach the user's profile to the order
+        order.user_id = profile
+        order.save()
 
     # Save the user's info
     if save_info:
