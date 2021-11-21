@@ -1,0 +1,1 @@
+Energy Gym Confirmation for Order Numer {{ order.order_id }}
