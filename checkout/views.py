@@ -61,7 +61,7 @@ def checkout(request):
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
-                            order_id=order_id,
+                            order=order,
                             product=product,
                             quantity=item_data,
                         )
@@ -71,11 +71,11 @@ def checkout(request):
                         "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
-                    order_id.delete()
+                    order.delete()
                     return redirect(reverse('view_bag'))
 
             request.session['save_info'] = 'save-info' in request.POST
-            return redirect(reverse('checkout_success', args=[order_id.order_id]))
+            return redirect(reverse('checkout_success', args=[order.order_id]))
         else:
             messages.error(request, 'There was an error with your form. \
                 Please double check your information.')
