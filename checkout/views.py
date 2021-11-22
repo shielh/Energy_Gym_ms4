@@ -31,7 +31,7 @@ def cache_checkout_data(request):
         return HttpResponse(content=e, status=400)
 
 
-def checkout(request, order=None):
+def checkout(request):
     stripe_public_key = settings.STRIPE_PUBLIC_KEY
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
@@ -61,7 +61,7 @@ def checkout(request, order=None):
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
-                            order=order,
+                            order_id=order_id,
                             product=product,
                             quantity=item_data,
                         )
