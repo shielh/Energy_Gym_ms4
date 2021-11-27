@@ -10,14 +10,15 @@ from profiles.models import UserProfile
 import json
 import time
 
+
 class StripeWH_Handler:
     """
     Handle Stripe webhooks
     """
+
     def __init__(self, request):
         self.request = request
 
-    
     def _send_confirmation_email(self, order):
         """Send the user a confirmation email"""
         cust_email = order.email
@@ -27,20 +28,20 @@ class StripeWH_Handler:
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-        
+
         send_mail(
             subject,
             body,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email]
-        )        
+        )
 
     def handle_event(self, event):
         """
-        Handle generic/unknown webhook event
+        Handle a generic/unknown/unexpected webhook event
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=f'Unhandled webhook received: {event["type"]}',
             status=200)
 
     def handle_payment_intent_succeeded(self, event):
@@ -56,7 +57,7 @@ class StripeWH_Handler:
         shipping_details = intent.shipping
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
-        #Clean data in the shipping details
+        # Clean data in the shipping details
         for field, value in shipping_details.address.items():
             if value == "":
                 shipping_details.address[field] = None
@@ -122,7 +123,7 @@ class StripeWH_Handler:
                     product = Product.objects.get(id=item_id)
                     if isinstance(item_data, int):
                         order_line_item = OrderLineItem(
-                            order_id=order_id,
+                            order_id=order,
                             product=product,
                             quantity=item_data,
                         )
