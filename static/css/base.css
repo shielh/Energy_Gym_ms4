@@ -82,7 +82,7 @@ body {
 }
 
 /* Custom Toast messages */ 
-.custom-toast {
+toast, .custom-toast {
     overflow: visible;
     position: fixed;
     top: 80px;
