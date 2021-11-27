@@ -82,12 +82,16 @@ body {
 }
 
 /* Custom Toast messages */ 
-toast, .custom-toast {
+.toast, .custom-toast {
     overflow: visible;
     position: fixed;
     top: 80px;
     right: 15px;
     z-index: 99999999999;
+}
+
+.toast-header{
+    justify-content: right;
 }
 
 .toast.show {
