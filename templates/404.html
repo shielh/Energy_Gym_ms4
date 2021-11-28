@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- Error 404 Page Content-->
+
+    <div class="container heading-container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <div class="card-panel center-align">
+                    <h3 class="center-align">Error 404</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="center-align">Page Not Found!</h3>
+                    <p>Looks like you followed a bad link. Please click 
+                    <a href="{% url 'home' %}" class="btn">here</a>
+                    to be returned to the home page
+                </p>
+                </div>
+            </div>        
+        </div>
+    </div>
+ 
+
+{% endblock %}
