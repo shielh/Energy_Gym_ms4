@@ -2,7 +2,7 @@
 {% block content %}
 <!-- Error 500 Page Content-->
 
-    <div class="container heading-container">
+    <div class="container error-container heading-container">
         <div class="row">
             <div class="col-12 text-center">
                 <div class="card-panel center-align">
@@ -13,7 +13,7 @@
                 <div class="col-12">
                     <h3 class="center-align">Page Not Found!</h3>
                     <p>Oops! Looks like something went wrong. Please click 
-                    <a href="{% url 'home' %}" class="btn">here</a>
+                    <a href="{% url 'home' %}" class="btn error-btn">here</a>
                     to be returned to the home page
                 </p>
                 </div>
