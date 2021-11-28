@@ -1,17 +1,14 @@
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, redirect, reverse get_object_or_404
 from django.http import Http404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
 from profiles.models import UserProfile
 from .models import Review
 from .forms import ReviewForm
 
 
 def reviews(request):
-    """
-    Returns reviews page
-    """
+    """ A view to return the review page """
     reviews = Review.objects.order_by('-date_created')
     context = {
         'reviews': reviews
@@ -53,7 +50,7 @@ def edit_review(request, review_id):
         if review.user != request.user.userprofile:
             messages.error(
                 request, "You cannot edit a review you didn't create!")
-            return redirect('reviews')
+            return redirect(reverse('reviews'))
         if request.method == 'POST':
             edit_form = ReviewForm(request.POST, instance=review)
             if edit_form.is_valid():
@@ -61,7 +58,7 @@ def edit_review(request, review_id):
                 review.user = UserProfile.objects.get(user=request.user)
                 edit_form.save()
                 messages.success(request, 'Successfully updated review!')
-                return redirect('reviews')
+                return redirect(reverse('reviews'))
             else:
                 messages.error(
                     request, 'Failed to update review. Please ensure the form is valid.')
@@ -86,7 +83,7 @@ def delete_review(request, review_id):
         if request.user.userprofile == review.user:
             review.delete()
             messages.success(request, 'Review deleted!')
-            return redirect('reviews')
+            return redirect(reverse('reviews'))
     except Http404:
         messages.error(request, "Sorry! That review doesn't seem to exist")
         return redirect('reviews')
