@@ -32,7 +32,7 @@ class Order(models.Model):
         max_length=254, null=False, blank=False, default='')
 
     def _generate_order_id(self):
-        """ 
+        """
         Generate unique order ID using UUID import
         """
         return uuid.uuid4().hex.upper()

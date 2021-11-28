@@ -13,5 +13,5 @@ class ReviewFormAdmin(admin.ModelAdmin):
         'user',
     )
 
-admin.site.register(Review, ReviewFormAdmin)
 
+admin.site.register(Review, ReviewFormAdmin)

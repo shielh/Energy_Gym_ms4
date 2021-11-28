@@ -16,10 +16,9 @@ def all_products(request):
     query = None
     categories = list(Category.objects.all())
 
-    category_products = {c.name:(c, []) for c in categories }
+    category_products = {c.name: (c, []) for c in categories }
     for product in products:
         category_products[product.category.name][1].append(product)
-
 
     if request.GET:
         if 'category' in request.GET:
@@ -64,7 +63,7 @@ def add_product(request):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry but only the site owners can do this')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -72,10 +71,11 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the' 
+                           + ' form is valid.')
     else:
         form = ProductForm()
-        
+
     template = 'products/add_product.html'
     context = {
         'form': form,
@@ -90,7 +90,7 @@ def edit_product(request, product_id):
     if not request.user.is_superuser:
         messages.error(request, 'Sorry but only the site owners can do this')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -99,7 +99,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure' +
+                           ' the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')

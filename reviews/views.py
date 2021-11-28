@@ -33,7 +33,7 @@ def add_review(request):
         else:
             messages.error(request, 'Failed to add review. Please try again!')
     else:
-        form = WriteReview()
+        form = ReviewForm()
 
     template = 'reviews/add_review.html'
     context = {

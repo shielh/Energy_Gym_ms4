@@ -16,3 +16,12 @@ class ReviewForm(forms.ModelForm):
             'title': 'Title',
             'comments': 'Please write your review here',
         }
+
+        self.fields['title'].widget.attrs['autofocus'] = True
+        for field in self.fields:
+
+            if self.fields[field].required:
+                placeholder = f'{placeholders[field]} *'
+            self.fields[field].widget.attrs['placeholder'] = placeholder
+            self.fields[field].widget.attrs['class'] = 'form-control'
+            self.fields[field].label = False
