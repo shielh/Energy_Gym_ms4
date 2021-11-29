@@ -3,9 +3,9 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "name": "1 Month Gym Membership",
-            "description": "1 Month Just Gym. Keeping it Simple",
-            "price": 60.00,
+            "name": "Dumbbells",
+            "description": "Set of dumbbells. 2 x 2.5kg, 2 x 5kg, 2 x 7.5kg, 2 x 10kg",
+            "price": 150.00,
             "category": 1,
             "image": "gym_membership1.jpg"
         }

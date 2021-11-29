@@ -6,6 +6,11 @@ html {
     background-color: #6c757d;
 }
 
+/* Navbar */
+.account-bag-list{
+    margin-bottom: 0;
+} 
+
 .search-icon {
     color: #fff;
 }
