@@ -91,8 +91,75 @@
                         </div>
                     </form>
                 </div>
+                
             </div>
         </div>
+    </div>
+</div>
+
+<div class="overlay"></div>
+    <div class="container-fluid heading-container">
+        
+        
+        <div class="row" >
+            <div class="membership-container heading-container col-10 offset-1">
+                    <h3>Reviews</h3>
+                </div>
+                
+
+                      
+                   {% for review in review %}
+                    <div class="col-10 offset-1">
+                        <div class="card border-0 mt-50">
+                                <p class="mb-0"><strong>{{ review.title }}</strong></p>
+                            </div>
+                            <div class="card-footer bg-white pt-0 border-0 text-left">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="lead mb-0 text-left font-weight-bold">{{ review.comments }}</p>
+                                        <p>{{ review.rating }} rating</p>
+                                        <p>{{ review.product }} ID</p>
+                                    </div>
+                                    {% if request.user.is_superuser %}
+                                        <small class="ml-3">
+                                            <a href="{% url 'edit_review' review.id %}">Edit</a> | 
+                                            <a class="text-danger" href="{% url 'delete_review' review.id %}">Delete</a>
+                                        </small>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                
+                    
+                 
+                </div>
+                </div>
+            </div>
+        </div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <hr>
+            <h2 class="logo-font mb-4 heading-container">Product Management</h2>
+            <h5 class="text-muted">Add a Product</h5>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-6">
+            <form method="POST" action="{% url 'add_review_to_product' product.id %}" class="form mb-2">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <div class="text-right">
+                    <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
+                    <button class="btn btn-black rounded-0" type="submit">Add Review</button>
+                </div>
+            </form>
+        </div>            
     </div>
 </div>
 {% endblock %}
