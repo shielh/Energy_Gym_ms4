@@ -104,7 +104,7 @@
         <div class="row" >
             <div class="membership-container heading-container col-10 offset-1">
                     <h3>Reviews</h3>
-                </div>
+                
                 
 
                       
@@ -139,6 +139,8 @@
             </div>
         </div>
 
+
+{% if request.user.is_authenticated %}
 <div class="container">
     <div class="row">
         <div class="col-12 col-md-6">
@@ -153,7 +155,7 @@
         <div class="col-12 col-md-6">
             <form method="POST" action="{% url 'add_review_to_product' product.id %}" class="form mb-2">
                 {% csrf_token %}
-                {{ form | crispy }}
+                {{ reviewForm | crispy }}
                 <div class="text-right">
                     <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}">Cancel</a>
                     <button class="btn btn-black rounded-0" type="submit">Add Review</button>
@@ -162,6 +164,7 @@
         </div>            
     </div>
 </div>
+{% endif %}
 {% endblock %}
 
 {% block postloadjs %}

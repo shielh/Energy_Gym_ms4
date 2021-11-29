@@ -47,18 +47,19 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view to show individual product details """
-
     product = get_object_or_404(Product, pk=product_id)
+    # Add review
     reviewForm = ReviewForm()
-    reviews = Review.objects.all
+    reviews = Review.objects.filter(product=product)
     
+    template = 'products/product_detail.html'
     context = {
         'product': product,
         'reviewForm': reviewForm,
         'reviews': reviews,
     }
 
-    return render(request, 'products/product_detail.html', context)
+    return render(request, template, context)
 
 
 @login_required
@@ -130,26 +131,35 @@ def delete_product(request, product_id):
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
 
+
 def add_review_to_product(request, product_id):
+    product = get_object_or_404(Product, pk=product_id)
+    user = get_object_or_404(UserProfile, user=request.user)
     if request.method == 'POST':
         form = ReviewForm(request.POST)
         if form.is_valid():
-            review = form.save(commit=False)
-            review.user = UserProfile.objects.get(user=request.user)
-            review.product = Product.objects.get(pk=product_id)
-            form.save()
-            messages.success(
-                request, 'Your review has been successfully added!')
-            return redirect('product_detail')
+            title = form.cleaned_data['title']
+            comments = form.cleaned_data['comments']
+            rating = form.cleaned_data['rating']
+            Review.objects.create(
+                user=user,
+                product=get_object_or_404(Product, pk=product_id),
+                title=title,
+                rating=rating,
+                comments=comments)
+            messages.success(request, 'Successfully added review.')
+            return redirect(reverse('product_detail', args=[product_id]))
         else:
-            messages.error(request, 'Failed to add review. Please try again!')
+            messages.error(request, 'Failed to add review. \
+                    Please check the form is valid and try again.')
     else:
         form = ReviewForm()
-
     template = 'products/product_detail.html'
     context = {
         'form': form,
+        'product': product,
     }
+
     return render(request, template, context)
 
 

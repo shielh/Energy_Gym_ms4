@@ -24,7 +24,10 @@ class ReviewForm(forms.ModelForm):
     """
     class Meta:
         model = Review
-        fields = ('title', 'comments', )
+        fields = ('title', 'comments', 'rating')
+        labels = {
+            'rating': 'Rating',
+        }
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
@@ -35,9 +38,10 @@ class ReviewForm(forms.ModelForm):
 
         self.fields['title'].widget.attrs['autofocus'] = True
         for field in self.fields:
+            if field != 'rating':
+                placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder
+                self.fields[field].label = False
 
-            if self.fields[field].required:
-                placeholder = f'{placeholders[field]} *'
-            self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'form-control'
-            self.fields[field].label = False
+

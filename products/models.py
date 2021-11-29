@@ -36,11 +36,13 @@ class Review(models.Model):
     """
     title = models.CharField(max_length=150)
     comments = models.TextField(max_length=1000)
-    rating = models.FloatField(default=0)
+    rating = models.IntegerField()
     product = models.ForeignKey(
-        Product, on_delete=models.CASCADE, blank=True, null=True)
+        Product, related_name='reviews', on_delete=models.CASCADE,
+        blank=True, null=True)
     user = models.ForeignKey(
-        UserProfile, on_delete=models.CASCADE, blank=True, null=True)
+        UserProfile, related_name='reviews', on_delete=models.CASCADE,
+        blank=True, null=True)
     date_created = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

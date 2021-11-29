@@ -30,8 +30,9 @@ class ReviewFormAdmin(admin.ModelAdmin):
     list_display = (
         'title',
         'comments',
-        'date_created',
         'user',
+        'rating',
+        'date_created',
     )
 
 
