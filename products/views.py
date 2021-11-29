@@ -50,7 +50,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviewForm = ReviewForm()
-    reviews = Review.objects.all()
+    reviews = Review.objects.all
     
     context = {
         'product': product,
@@ -140,8 +140,7 @@ def add_review_to_product(request, product_id):
             form.save()
             messages.success(
                 request, 'Your review has been successfully added!')
-            return redirect('products')
-            # redirect to product detail
+            return redirect('product_detail')
         else:
             messages.error(request, 'Failed to add review. Please try again!')
     else:
@@ -149,7 +148,7 @@ def add_review_to_product(request, product_id):
 
     template = 'products/product_detail.html'
     context = {
-        'form': form
+        'form': form,
     }
     return render(request, template, context)
 
