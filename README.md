@@ -209,3 +209,9 @@ When the above steps are complete, the app is ready to deploy to Heroku:
     - STRIPE_SECRET_KEY
     - STRIPE_WH_SECRET
     - USE_AWS
+
+## Code
+Code institutes Boutique Ado project
+https://www.youtube.com/watch?v=lSX8nzu9ozg
+https://www.youtube.com/watch?v=fEoQsPvcZGs
+https://getbootstrap.com/docs/5.0/components/collapse/

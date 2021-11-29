@@ -226,21 +226,18 @@ def edit_review(request, review_id):
             'review': review,
         }
 
-        return render(request, 'reviews/edit_review.html', context)
+        return render(request, 'products/product_detail.html', context)
     except Http404:
         messages.error(request, "Sorry, that review doesn't seem to exist")
-        return redirect('reviews')
+        return redirect('product_detail')
 
 
 @login_required
 def delete_review(request, review_id):
-    """ Delete a review from the site """
-    try:
-        review = get_object_or_404(Review, pk=review_id)
-        if request.user.userprofile == review.user:
-            review.delete()
-            messages.success(request, 'Review deleted!')
-            return redirect(reverse('reviews'))
-    except Http404:
-        messages.error(request, "Sorry! That review doesn't seem to exist")
-        return redirect('reviews')
+    """
+    Delete a review for a product
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    review.delete()
+    messages.success(request, 'Review deleted!')
+    return redirect(reverse('product_detail', args=(review.product.id,)))

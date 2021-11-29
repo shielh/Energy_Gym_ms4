@@ -34,9 +34,17 @@ class Review(models.Model):
     """
     Model so users so write reviews on products
     """
+    RATE = [
+        (1, '1'),
+        (2, '2'),
+        (3, '3'),
+        (4, '4'),
+        (5, '5'),
+    ]
+    
     title = models.CharField(max_length=150)
     comments = models.TextField(max_length=1000)
-    rating = models.IntegerField()
+    rating = models.IntegerField(choices=RATE)
     product = models.ForeignKey(
         Product, related_name='reviews', on_delete=models.CASCADE,
         blank=True, null=True)

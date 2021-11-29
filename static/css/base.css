@@ -2,7 +2,6 @@ html {
     height: 100%;
 }
 
-
 .banner-bg {
     background-color: #6c757d;
 }
@@ -108,9 +107,12 @@ html {
 }
 
 /* Products page */
-.overlay{
-    margin-top: 48px;
+.add-review-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
+
 
 /* Shopping Bag */
 .shopping-container{
@@ -120,15 +122,6 @@ html {
 .bag-footer {
      text-align: right;
  }
-
-.product-container{
-    margin-top: 160px;
-}
-
-/* Checkout Page */
-.heading-container{
-    margin-top: 60px;
-}
 
 /* Custom Error Pages */
 .error-btn {
