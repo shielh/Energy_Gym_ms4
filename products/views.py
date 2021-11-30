@@ -199,40 +199,6 @@ def add_review(request):
 
 
 @login_required
-def edit_review(request, review_id):
-    """ Edit a review """
-    try:
-        review = get_object_or_404(Review, pk=review_id)
-        if review.user != request.user.userprofile:
-            messages.error(
-                request, "You cannot edit a review you didn't create!")
-            return redirect(reverse('reviews'))
-        if request.method == 'POST':
-            edit_form = ReviewForm(request.POST, instance=review)
-            if edit_form.is_valid():
-                review = edit_form.save(commit=False)
-                review.user = UserProfile.objects.get(user=request.user)
-                edit_form.save()
-                messages.success(request, 'Successfully updated review!')
-                return redirect(reverse('reviews'))
-            else:
-                messages.error(
-                    request, 'Failed to update review. Please ensure the form '
-                    + 'is valid.')
-
-        edit_form = ReviewForm(instance=review)
-        context = {
-            'form': edit_form,
-            'review': review,
-        }
-
-        return render(request, 'products/product_detail.html', context)
-    except Http404:
-        messages.error(request, "Sorry, that review doesn't seem to exist")
-        return redirect('product_detail')
-
-
-@login_required
 def delete_review(request, review_id):
     """
     Delete a review for a product
