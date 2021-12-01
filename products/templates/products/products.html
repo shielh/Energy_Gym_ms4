@@ -18,11 +18,12 @@
             <div class="membership-container col-10 offset-1">
                 <div class="row mt-1 mb-2"></div>
                 <div class="row">
-                    {% for c, t in cps.items %}
-
-                    <h2 class="text-black text-center">{{ t.0.friendly_name }}</h2>
-                    
-                    {% for product in t.1 %}
+                    {% if category_products.items %}
+                    {% for category_name, pair in category_products.items %}
+                        
+                            <h2 class="text-black text-center">{{ pair.0.friendly_name }}</h2>
+                        
+                        {% for product in pair.1 %}
                     
                       
                    
@@ -77,6 +78,9 @@
                     {% endif %}
                     {% endfor %}
                     {% endfor %}
+                        {% else %}
+                            <h2 class="text-black text-center">Oops! Your search didn't return any products!</h2>
+                    {% endif %}
                  
                 </div>
                 </div>

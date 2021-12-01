@@ -12,20 +12,16 @@ from .forms import ProductForm, ReviewForm
 def all_products(request):
     """ A view to show all products"""
 
+    categories = Category.objects.all()
     products = Product.objects.all()
-    query = None
-    categories = list(Category.objects.all())
-
-    category_products = {c.name: (c, []) for c in categories}
-    for product in products:
-        category_products[product.category.name][1].append(product)
 
     if request.GET:
+        # filter products by category
         if 'category' in request.GET:
-            categories = request.GET['category'].split(',')
-            products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            category_names = request.GET['category'].split(',')
+            products = products.filter(category__name__in=category_names)
 
+        # search by product name
         if'q' in request.GET:
             query = request.GET['q']
             if not query:
@@ -35,11 +31,16 @@ def all_products(request):
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
+        # only show categories that have a product 
+        categories = categories.filter(name__in=[p.category.name for p in products])
+
+    # Links products to category name for heading
+    category_products = {c.name: (c, []) for c in categories}
+    for product in products:
+        category_products[product.category.name][1].append(product)            
+
     context = {
-        'products': list(products),
-        'search_term': query,
-        'current_categories': categories,
-        'cps': category_products,
+        'category_products': category_products,
     }
 
     return render(request, 'products/products.html', context)
