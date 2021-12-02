@@ -3,8 +3,10 @@ from .models import Contact
 
 
 class ContactForm(forms.ModelForm):
-    subject = forms.CharField(label="", widget=forms.TextInput(
-        attrs={'placeholder': 'Subject'}))
+    name = forms.CharField(label="", widget=forms.TextInput(
+        attrs={'placeholder': 'Name'}))
+    email = forms.EmailField(label="", widget=forms.TextInput(
+        attrs={'placeholder': 'Email Address'}))
     message = forms.CharField(label="", widget=forms.Textarea(
         attrs={'placeholder': 'Message'}))
 
@@ -15,4 +17,4 @@ class ContactForm(forms.ModelForm):
 
     class Meta:
         model = Contact
-        fields = ('subject', 'message',)
+        fields = ('name', 'email', 'message',)
