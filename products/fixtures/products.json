@@ -3,8 +3,8 @@
         "pk": 1,
         "model": "products.product",
         "fields": {
-            "name": "Dumbbells",
-            "description": "Set of dumbbells. 2 x 2.5kg, 2 x 5kg, 2 x 7.5kg, 2 x 10kg",
+            "name": "1 Months Gym Membership",
+            "description": "3 Months Just Gym. Keeping it Simple",
             "price": 150.00,
             "category": 1,
             "image": "gym_membership1.jpg"
@@ -91,7 +91,7 @@
         "pk": 9,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Burgundy Energy Beanie",
             "description": "Burgundy Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -102,7 +102,7 @@
         "pk": 10,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Black Energy Beanie",
             "description": "Black Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -113,7 +113,7 @@
         "pk": 11,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Grey Energy Beanie",
             "description": "Grey Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -124,7 +124,7 @@
         "pk": 12,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Pink Energy Beanie",
             "description": "Pink Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -135,7 +135,7 @@
         "pk": 13,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Navy Energy Beanie",
             "description": "Navy Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -146,7 +146,7 @@
         "pk": 14,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Biege Energy Beanie",
             "description": "Biege Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
@@ -157,11 +157,23 @@
         "pk": 15,
         "model": "products.product",
         "fields": {
-            "name": "Energy Beanie",
+            "name": "Green Energy Beanie",
             "description": "Green Energy Beanie. One Size Fits All",
             "price": 19.99,
             "category": 3,
             "image": "greenbeanie.PNG"
+        }
+    }
+    ,
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "name": "Yellow Energy Beanie",
+            "description": "Yellow Energy Beanie. One Size Fits All",
+            "price": 19.99,
+            "category": 3,
+            "image": "yellowbeanie.PNG"
         }
     }
 ]
