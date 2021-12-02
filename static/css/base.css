@@ -19,13 +19,43 @@ html {
     background: url('/media/hero_image.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 0;
-    height: 100vh;
+    height: 73vh;
 }
 
 .img-button {
     position: absolute;
     left: 50%;
     bottom: 33%;
+}
+
+/* Footer */
+footer {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.footer-icon,
+.footer-icon:hover{
+    color: #fff;
+}
+
+/*--Bootstrap inline list style Found on Stack Overflow--*/
+
+.list-inline {
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+	padding-top: 10px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.list-inline>li {
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 /* Login page */
@@ -144,12 +174,11 @@ html {
         background: url('/media/hero_image_mobile.jpg') no-repeat center center fixed;
         background-size: cover;
         padding: 0;
-        height: 100vh;
+        height: 73vh;
     }
     .img-button{
         position: absolute;
         left: 33%;
-        bottom: 33%;
+        bottom: 50%;
     }
 }
-

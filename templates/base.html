@@ -45,7 +45,7 @@
   <header class="container-fluid sticky-top p-0">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
       <div class="container container-fluid no-gutters">
-        <a class="navbar-brand" href="#">Energy</a>
+        <a class="navbar-brand" href="{% url 'home' %}">Energy</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02"
           aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -161,6 +161,28 @@
 
   {% block content %}
   {% endblock %}
+  <!--Footer content-->
+  <footer class = "page-footer navbar-dark bg-dark">
+    <div class="row">
+       <div class="col-12 text-center mt-3">
+          <h5 class=" foot-header text-white">Energy Gym &copy;</h5>
+       </div>
+       <!--Social Media Links-->
+       <div class="col-12 text-center footer-icons mb-3">
+          <ul class="list-inline">
+             <li><a href="https://www.facebook.com/" class="footer-icon" rel="noopener" target="_blank"><i
+                class="fab fa-facebook-square"><span class="sr-only">Facebook</span></i></a></li>
+             <li><a href="https://www.instagram.com/" class="footer-icon" rel="noopener" target="_blank">
+                <i class="fab fa-instagram "><span class="sr-only">Instagram</span></i></a>
+             </li>
+             <li><a href="{% url 'contact_form' %}" rel="noopener" class="footer-icon">
+                <i class="fas fa-envelope "><span class="sr-only">Contact</span></i></a>
+             </li>
+          </ul>
+       </div>
+    </div>
+ </footer>
+
 
   {% block postloadjs %}
 
