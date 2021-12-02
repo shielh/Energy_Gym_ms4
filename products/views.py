@@ -1,5 +1,4 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
-from django.http import Http404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
@@ -52,7 +51,7 @@ def product_detail(request, product_id):
     # Add review
     reviewForm = ReviewForm()
     reviews = Review.objects.filter(product=product)
-    
+
     template = 'products/product_detail.html'
     context = {
         'product': product,
