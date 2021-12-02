@@ -41,7 +41,7 @@ class Review(models.Model):
         (4, '4'),
         (5, '5'),
     ]
-    
+
     title = models.CharField(max_length=150)
     comments = models.TextField(max_length=1000)
     rating = models.IntegerField(choices=RATE)
