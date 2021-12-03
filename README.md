@@ -54,16 +54,18 @@ We both have similar opinions on how our site shoud look and function. We want a
 ### User stories
 - As a first time user, I want to be able to easily navigate across the site so I can find the content quickly
 - As a first time user, I want to know the purpose of the site immediately upon arrival
-- As a first time user, I want to be able to find information about the membership options available at the gym
+- As a first time user, I want to see information about the gym and their values
+- As a first time user, I want to be able to find information about the membership, class bundles and products for sale on the site
 - As a user I want the site to be responsive across all devices
 - As I user I want to be able to easily create an account
-- As a user I want to be able to select a membership appropriate for my life
+- As a registered user, I want my details to autofill in the checkout page
 - As a user, I want to be able to view my order in the cart before paying to review
 - As a user I want to be able to pay securely
-- As a logged in user I want to be able to leave a review on the review section
+- As a user, I want to be able to remove a product from my bag
+- As a logged in user, I want to be able to leave a review on the product detail page
+- As a logged in user, I want to be able to view my previous orders
 - As a user, I want to be able to view other users reviews
-- 
-- 
+- As a user, I want to be able to contact the site owner with any questions or queries
 
 ### User stories - Admin
 - As an admin user, I want to be able to add, edit and delete products on the site
@@ -74,7 +76,7 @@ We both have similar opinions on how our site shoud look and function. We want a
 #### Features
 ##### Site Wide Features
 - Navbar with site logo  "Energy", directing users back to the home page
-- Navbar containing links to Home, About, Products, Account and Cart
+- Navbar containing links to Home, About, Shop, Contact, Account and Cart
 - Navbar containing search bar
 - Responsive navbar on mobile device, collapsing into burger icon
 
