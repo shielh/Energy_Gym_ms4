@@ -1,9 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 html {
     height: 100%;
 }
 
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6{
+    font-family: "Asap", sans-serif;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
 .banner-bg {
-    background-color: #6c757d;
+    background-color: #57753c;
 }
 
 /* Navbar */
@@ -19,13 +35,28 @@ html {
     background: url('/media/hero_image.jpg') no-repeat center center fixed;
     background-size: cover;
     padding: 0;
-    height: 73vh;
+    height: 80vh;
 }
 
 .img-button {
     position: absolute;
+    background-color: rgba(0, 0, 0, .5);
     left: 50%;
     bottom: 33%;
+}
+
+.btn-outline-light:hover{
+    background-color: #57753c;
+    color: #fff;
+}
+
+.nav-link-icon{
+    padding: 0;
+}
+
+/* Home Page */
+.about-heading{
+    margin-top: 20px;
 }
 
 /* Footer */
@@ -190,19 +221,4 @@ footer {
     align-items: center;
     justify-content: center;
     text-align: center;
-}
-
-/* Media Queries */
-@media (max-width: 768px){
-    .home-img {
-        background: url('/media/hero_image_mobile.jpg') no-repeat center center fixed;
-        background-size: cover;
-        padding: 0;
-        height: 73vh;
-    }
-    .img-button{
-        position: absolute;
-        left: 33%;
-        bottom: 50%;
-    }
 }

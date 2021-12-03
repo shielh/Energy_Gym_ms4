@@ -1,0 +1,14 @@
+/* Media Queries */
+@media (max-width: 768px){
+    .home-img {
+        background: url('/media/hero_image_mobile.jpg') no-repeat center center fixed;
+        background-size: cover;
+        padding: 0;
+        height: 73vh;
+    }
+    .img-button{
+        position: absolute;
+        left: 33%;
+        bottom: 50%;
+    }
+}

@@ -22,6 +22,7 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap">
   <link rel="stylesheet" href="{% static 'css/base.css' %}">
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
   {% endblock %}
 
   {% block extra_css %}
@@ -69,10 +70,6 @@
             <li class="nav-item">
               <a class="nav-link" href="{% url 'products' %}">Shop</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="{% url 'contact_form' %}">Contact</a>
-            </li>
-
 
           </ul>
           <form method="GET" action="{% url 'products' %}">
@@ -88,12 +85,12 @@
               </div>
             </div>
           </form>
-          <ul>
+          <ul style="margin: 2px 0;">
             <li class="list-inline-item dropdown">
-              <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
+              <a class="text-black nav-link nav-link-icon" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
                 aria-expanded="false">
                 <div class="text-center">
-                  <div><i class="fas fa-user fa-lg account-icon"></i></div>
+                  <div><i class="fas fa-user fa-md account-icon"></i></div>
                   <p class="my-0 text-white">Account</p>
                 </div>
               </a>
@@ -111,10 +108,21 @@
               </div>
             </li>
             <li class="list-inline-item">
-              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link"
+              <a class="text-info font-weight-bold nav-link nav-link-icon"
+                href="{% url 'contact_form' %}">
+                <div class="text-center">
+                  <div><i class="fas fa-envelope fa-md bag-icon"></i></div>
+                  <p class="my-0 bag-text">
+                    Contact
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link nav-link-icon"
                 href="{% url 'view_bag' %}">
                 <div class="text-center">
-                  <div><i class="fas fa-shopping-bag fa-lg bag-icon"></i></div>
+                  <div><i class="fas fa-shopping-bag fa-md bag-icon"></i></div>
                   <p class="my-0 bag-text">
                     {% if grand_total %}
                     €{{ grand_total|floatformat:2 }}
@@ -125,7 +133,7 @@
                 </div>
               </a>
             </li>
-
+            
           </ul>
 
         </div>
