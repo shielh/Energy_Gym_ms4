@@ -11,4 +11,7 @@
         left: 33%;
         bottom: 50%;
     }
+    .contact-image{
+        display: none;
+    }
 }

@@ -59,6 +59,14 @@ p {
     margin-top: 20px;
 }
 
+.values-icon{
+    color: #57753c;
+}
+
+.values-content{
+    margin: 5px 0;
+}
+
 /* Footer */
 footer {
     position: relative;
