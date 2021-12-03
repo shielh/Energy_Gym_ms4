@@ -200,18 +200,9 @@ footer {
      text-align: right;
  }
 
-/* Custom Error Pages */
-.error-btn {
-    border: #000 1px solid;
-}
-
-.error-container{
-    border: #000 1px solid;
-    justify-content: center;
-    height: 100vh;
-}
-
-.error-content{
+/* Error 404 & 500 page */
+/* Center form and content */
+.error-card {
     margin: 0 auto;
     width: 80%;
     height: 250px;
