@@ -210,8 +210,13 @@ footer {
 
 /* Contact Page */
 .contact-image{
-    max-height: 50vh;
-    height: auto;
+    max-height: 416px;
+    width: auto;
+}
+
+.contact-image-content{
+    display: flex;
+    justify-content: center;
 }
 
 /* Error 404 & 500 page */

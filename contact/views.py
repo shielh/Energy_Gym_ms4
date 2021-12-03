@@ -6,7 +6,6 @@ from profiles.models import UserProfile
 
 def contact_form(request):
     template = 'contact/contact.html'
-    user = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
         form = ContactForm(request.POST)
