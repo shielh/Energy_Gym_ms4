@@ -141,13 +141,24 @@ footer {
     color: #fff;
 }
 
-/* Products page */
+/* All products page */
+.product-btn{
+    border: 1px solid #000;
+    border-radius: 2px;
+    width: 60px;
+    text-align: center;
+}
+
+/* Product Details page */
 .add-review-btn{
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
+.review-card{
+    border: none;
+}
 
 /* Shopping Bag */
 .shopping-container{

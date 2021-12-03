@@ -83,7 +83,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5"
+                                <input type="submit" class="btn btn-dark rounded-0 text-uppercase mt-5"
                                     value="Add to Bag">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
@@ -108,11 +108,11 @@
 
         {% for review in reviews %}
             <div class="col-4 col-md-4 offset-2">
-                <div class="card text-black mb-3" >
-                    <div class="card-header">{{ review.rating }} rating</div>
+                <div class="card review-card text-black mb-3" >
+                    <h4 class="card-header">{{ review.title }}</h4>
                     <div class="card-body">
-                    <h4 class="card-title">{{ review.title }}</h4>
-                    <h6 class="card-title">{{ review.date_created }}</h6>
+                    <div class="card-text">{{ review.rating }}/5 Rating</div>
+                    <h6 class="card-text">{{ review.date_created }}</h6>
                     <p class="card-text">{{ review.comments }}</p>
                     {% if request.user.is_superuser %}
                         <small class="ml-3">
