@@ -104,8 +104,8 @@ def checkout(request):
                     'phone_number': profile.default_phone_number,
                     'postcode': profile.default_post_code,
                     'town_or_city': profile.default_town_or_city,
-                    'street_address1': profile.default_address_line1,
-                    'street_address2': profile.default_address_line2,
+                    'address_line1': profile.default_address_line1,
+                    'address_line2': profile.default_address_line2,
                     'county': profile.default_county,
                 })
             except UserProfile.DoesNotExist:
