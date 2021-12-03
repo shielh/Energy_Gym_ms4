@@ -200,6 +200,12 @@ footer {
      text-align: right;
  }
 
+/* Contact Page */
+.contact-image{
+    max-height: 50vh;
+    height: auto;
+}
+
 /* Error 404 & 500 page */
 /* Center form and content */
 .error-card {

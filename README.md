@@ -5,7 +5,7 @@ The live version of the site is available [here]()
 This project was created for my fourth and final Milestone Project with Code Institute in order to display my knowledge and understanding 
 of HTML, CSS, JavaScript, Python+Django, MySQL and Stripe payments.
 
-I remember I really wanted to create a website for a gym for my first project but I held out until now to complete it so I could add the features I wanted to add and have it looking as professional as possible. As someone who is equally passionate about fitness and technology, I know the huge effect a good website can have on the perception of your business. Down the line, I would love to be able to open my own fitness studio so this project is going to be the first step in acheiving that goal. I want this site to be simple and sleek with strong images and minimal text. This site will be the place users come to sign up easily and be able to purchase their membership option as well as book in for classes. The members will also be able to leave reviews on the classes to create a community feel where feedback is always appreciated.
+I remember I really wanted to create a website for a gym for my first project but I held out until now to complete it so I could add the features I wanted to add and have it looking as professional as possible. As someone who is equally passionate about fitness and technology, I know the huge effect a good website can have on the perception of your business. Down the line, I would love to be able to open my own fitness studio so this project is going to be the first step in acheiving that goal. I want this site to be simple and sleek with strong images and minimal text. This site will be the place users come to sign up easily and be able to purchase their membership option. The members will also be able to leave reviews on the gym and the products to create a community feel where feedback is always appreciated.
 
 ---
 
@@ -47,9 +47,9 @@ I remember I really wanted to create a website for a gym for my first project bu
 
 ## User Experience
 ### The Strategy Plane
-Energy Gym is a site that myself and a friend want built for potential business idea. Both of us are keen gym goers and really appreciate the power of a good website. Down the line, we plan to open a gym in Dublin city and we will use this project as the beginning of our new, exciting adventure.
+Energy Gym is a site that myself and a friend want built for a potential business idea. Both of us are keen gym goers and really appreciate the power of a good website. Down the line, we plan to open a gym in Dublin city and we will use this project as the beginning of our new, exciting adventure.
 
-We both have similar opinions on how our site shoud look and function. We want a clean , classy site with sharp images and minimal text. We want users to be able to be create an account and have the choice of three membership options - 1 month, 3 months or annual memberships. Users will be able to book into classes and read blog pieces on healthy lifestyles.
+We both have similar opinions on how our site shoud look and function. We want a clean , classy site with sharp images and minimal text. We want users to be able to be create an account and have the choice of four membership options - 1, 3, 6 months or annual memberships. Users will be able to purchase membership options, class bundles and gym merchandise on the site and down the line many more features will be added which I will expand onmore in the future features section.
 
 ### User stories
 - As a first time user, I want to be able to easily navigate across the site so I can find the content quickly
