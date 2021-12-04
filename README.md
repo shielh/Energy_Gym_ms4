@@ -104,8 +104,6 @@ We both have similar opinions on how our site shoud look and function. We want a
     - This is the hosting site where I first created the repository for this webpage and also where the live site is deployed from 
 - [Git](https://git-scm.com/) 
     - This is the version control software used where can I commit and push the updated information to the hosting website GitHub
-- [MongoDB](https://www.mongodb.com/)
-    - This was used for the database
 - [BootsWatch](https://bootswatch.com/)
     - This was used as a theme for Bootstrap
 - [PyMongo](https://pymongo.readthedocs.io/)
@@ -120,8 +118,6 @@ We both have similar opinions on how our site shoud look and function. We want a
     - This was used to choose complementary fonts
 - [Tiny JPG](https://tinyjpg.com/) 
     - This was used this to compress my images
-- [ClipArtKey](https://www.clipartkey.com/)
-    - This was used to download the olive branch image used above the footer of the site
 - [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools)
     - This was used to inspect elements on the page and help debug issues involving the 
     site layout
@@ -135,7 +131,8 @@ We both have similar opinions on how our site shoud look and function. We want a
     - This was used as a web template engine for the Python language 
 - [Web Accessibility](https://www.webaccessibility.com/)
     - This was used to test the accessibility of this site for users with disabilities
-
+- [Free Logo Design](https://www.freelogodesign.org/)
+    - This was used to create the site logo
 
 [Back to top](#Table-of-Contents)
 
