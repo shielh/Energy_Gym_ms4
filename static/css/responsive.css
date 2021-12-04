@@ -14,4 +14,11 @@
     .contact-image{
         display: none;
     }
+    .bag-image,
+    .bag-image-heading{
+        display: none;
+    }
+    .shopping-bag-btn{
+        margin-bottom: 2px;
+    }
 }
