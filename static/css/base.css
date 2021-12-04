@@ -30,6 +30,10 @@ p {
 }
 
 /* Navbar */
+.site-logo{
+    height: 75px;
+}
+
 .account-bag-list{
     margin-bottom: 0;
 } 
