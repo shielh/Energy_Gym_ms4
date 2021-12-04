@@ -19,7 +19,7 @@ class UserProfileForm(forms.ModelForm):
             'default_town_or_city': 'Town or City',
             'default_address_line1': 'Street Address 1',
             'default_address_line2': 'Street Address 2',
-            'default_county': 'County, State or Locality',
+            'default_county': 'County',
         }
 
         self.fields['default_phone_number'].widget.attrs['autofocus'] = True

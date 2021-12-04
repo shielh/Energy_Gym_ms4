@@ -97,13 +97,14 @@
     </div>
 
 
-
+    {% if reviews %}
     <div class="membership-container heading-container">
         <div class="row">
             <div class="col-5 offset-2">
                 <h3 class="text-left ml-5">Customer Reviews</h3>
             </div>
         </div>
+    {% endif %}
         
 
         {% for review in reviews %}
@@ -132,7 +133,7 @@
 {% if request.user.is_authenticated %}
 <div class="container">
     <div class="row">
-        <div class="col-12 col-md-6 add-review-btn">
+        <div class="col-2 add-review-btn">
             <a class="btn btn-secondary text-center " data-bs-toggle="collapse" href="#collapseExample" role="button"
                 aria-expanded="false" aria-controls="collapseExample">
                 Add a Review

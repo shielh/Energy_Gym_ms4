@@ -56,8 +56,9 @@ We both have similar opinions on how our site shoud look and function. We want a
 - As a first time user, I want to know the purpose of the site immediately upon arrival
 - As a first time user, I want to see information about the gym and their values
 - As a first time user, I want to be able to find information about the membership, class bundles and products for sale on the site
-- As a user I want the site to be responsive across all devices
-- As I user I want to be able to easily create an account
+- As a user, I want the site to be responsive across all devices
+- As a user, I want to be able to easily create an account
+- As a user, I want to be able to be able to search for the products in the search area in the navbar
 - As a registered user, I want my details to autofill in the checkout page
 - As a user, I want to be able to view my order in the cart before paying to review
 - As a user I want to be able to pay securely
@@ -70,7 +71,7 @@ We both have similar opinions on how our site shoud look and function. We want a
 ### User stories - Admin
 - As an admin user, I want to be able to add, edit and delete products on the site
 - As an admin user, I want to be able to delete reviews that might contain harmful or inappropriate content
-- 
+- As an admin user, I want to be
 
 ### The Scope Plane
 #### Features
