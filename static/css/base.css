@@ -54,10 +54,10 @@ p {
 }
 
 .img-button {
-    position: fixed;
+    position: absolute;
     background-color: rgba(0, 0, 0, .5);
     left: 50%;
-    top: 5%;
+    top: 50%;
 }
 
 .btn-outline-light:hover{
