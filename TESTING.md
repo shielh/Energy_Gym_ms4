@@ -445,7 +445,6 @@ Verify that the site provides the user with the ability to contact the gym.
 6. Click delete button
 7. Oberve review is delete
 
-
 **Expected Result:**
 The admin user will be able to delete any users reviews.
 
