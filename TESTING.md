@@ -299,6 +299,8 @@ The user is able to successfully leave a review.
 **Pass/Fail:**
 Pass
 
+<img src="documentation/images/customer-reviews.PNG" width="956" height="458" alt="Review image">
+
 ### Test Case 10
 - As a logged in user, I want to be able to view my previous orders
 
@@ -323,6 +325,8 @@ The user is able to view their order history easily.
 
 **Pass/Fail:**
 Pass
+
+<img src="documentation/images/profile-page.PNG" width="956" height="458" alt="Profile page image">
 
 
 ### Test Case 11
@@ -353,6 +357,26 @@ Pass
 
 - As a user, I want to be presented with custom error 404 and 500 pages when appropriate
 
+**Description:**
+
+Verify Error 404 page is displayed when navigating to a page that does not exist
+
+**Steps:**<br>
+1. Search for  https://energy-gym-ms4.herokuapp.com/doesnotexist
+2. Click enter
+
+**Expected Result:**<br>
+404 page should be displayed
+
+**Actual Result:**<br>
+404 page is displayed
+
+**Pass/Fail:**<br>
+Pass
+
+<img src="documentation/images/404-page.PNG" width="956" height="458" alt="404 image">
+
+
 ### Test Case 13
 - As a user, I want to be able to contact the site owner with any questions or queries
 
@@ -382,21 +406,29 @@ Pass
 - As an admin user, I want to be able to add, edit and delete products on the site
 
 **Description**
-
+Verify that an admin/ superuser has the ability to use CRUD functionality for products
 
 **Steps**
 1. Open an internet browser.
 2. Navigate to [https://energy-gym-ms4.herokuapp.com/](https://energy-gym-ms4.herokuapp.com/)
-
+3. Log in as admin user
+4. Can navigate to https://energy-gym-ms4.herokuapp.com/admin to organise products model
+5. Alternatively, the admin user can update, add or delete products on the main site
+6. Navigate to Shop page and admin user should see edit and delete buttons under each product
+7. Navigate to Product Management under account icon in Navbar to add a product
 
 **Expected Result:**
-The user will be able to contact the gym through the site's contact page.
+The admin user will be able to use all CRUD functionality
 
 **Actual Result:**
-The user is able to contact the gym through the site's contact page.
+The admin user is able to use all CRUD functionality
 
 **Pass/Fail:**
 Pass
+
+<img src="documentation/images/admin-edit-delete.PNG" alt="Admin view edit delete button image">
+
+<img src="documentation/images/admin-product-mgmt.PNG" width="956" height="458" alt="Admin product management page image">
 
 ### Test Case 15
 - As an admin user, I want to be able to delete reviews that might contain harmful or inappropriate content
@@ -407,19 +439,23 @@ Verify that the site provides the user with the ability to contact the gym.
 **Steps**
 1. Open an internet browser.
 2. Navigate to [https://energy-gym-ms4.herokuapp.com/](https://energy-gym-ms4.herokuapp.com/)
+3. Sign in as admin user
+4. Navigate to product detail page where a review has been added
+5. Observe delete button
+6. Click delete button
+7. Oberve review is delete
 
 
 **Expected Result:**
-The user will be able to contact the gym through the site's contact page.
+The admin user will be able to delete any users reviews.
 
 **Actual Result:**
-The user is able to contact the gym through the site's contact page.
+The admin user is able to delete any users reviews.
 
 **Pass/Fail:**
 Pass
 
-
-
+<img src="documentation/images/customer-reviews.PNG" width="956" height="458" alt="Review Delete Admin image">
 
 ## Issues and Solutions
 This project was the one where I encountered the most bugs and issues which is not surprising given the scope and complexity. 

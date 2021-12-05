@@ -73,6 +73,7 @@ We both have similar opinions on how our site shoud look and function. We want a
 - As a logged in user, I want to be able to view my previous orders
 - As a user, I want to be able to view other users reviews
 - As a user, I want to be able to contact the site owner with any questions or queries
+- As a user, I want to be presented with custom error 404 and 500 pages when appropriate
 
 ### User stories - Admin
 - As an admin user, I want to be able to add, edit and delete products on the site
