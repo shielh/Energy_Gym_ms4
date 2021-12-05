@@ -1,6 +1,6 @@
 # Energy Gym
 
-The live version of the site is available [here]()
+The live version of the site is available [here](https://energy-gym-ms4.herokuapp.com/)
 
 This project was created for my fourth and final Milestone Project with Code Institute in order to display my knowledge and understanding 
 of HTML, CSS, JavaScript, Python+Django, MySQL and Stripe payments.
@@ -77,7 +77,7 @@ We both have similar opinions on how our site shoud look and function. We want a
 #### Features
 ##### Site Wide Features
 - Navbar with site logo  "Energy", directing users back to the home page
-- Navbar containing links to Home, About, Shop, Contact, Account and Cart
+- Navbar containing links to Home, Shop, Contact, Account and Cart
 - Navbar containing search bar
 - Responsive navbar on mobile device, collapsing into burger icon
 
@@ -86,9 +86,6 @@ We both have similar opinions on how our site shoud look and function. We want a
 - Button in middle of video prompting user to sign up 
 - Description of type of products available
 - Button linking to products page
-
-##### About page
--
 
 ##### Products page
 - Contains headers corresponding to category type of products
@@ -178,29 +175,29 @@ Contact
 This project is primarily built using HTML5 semantic markup, CSS, Javascript, Python, Django, SQLite and Heroku Postgres.
 - [Python](https://www.python.org/) 
     - The following were additionally used:
-    asgiref==3.4.1
-    boto3==1.20.10
-    botocore==1.23.10
-    crispy-bootstrap5==0.6
-    dj-database-url==0.5.0
-    Django==3.2.8
-    django-allauth==0.41.0
-    django-crispy-forms==1.13.0
-    django-storages==1.12.3
-    gunicorn==20.1.0
-    jmespath==0.10.0
-    oauthlib==3.1.1
-    Pillow==8.4.0
-    psycopg2-binary==2.9.2
-    python3-openid==3.2.0
-    pytz==2021.3
-    requests-oauthlib==1.3.0
-    s3transfer==0.5.0
-    sqlparse==0.4.2
-    stripe==2.62.0
+        - asgiref==3.4.1
+        - boto3==1.20.10
+        - botocore==1.23.10
+        - crispy-bootstrap5==0.6
+        - dj-database-url==0.5.0
+        - Django==3.2.8
+        - django-allauth==0.41.0
+        - django-crispy-forms==1.13.0
+        - django-storages==1.12.3
+        - gunicorn==20.1.0
+        - jmespath==0.10.0
+        - oauthlib==3.1.1
+        - Pillow==8.4.0
+        - psycopg2-binary==2.9.2
+        - python3-openid==3.2.0
+        - pytz==2021.3
+        - requests-oauthlib==1.3.0
+        - s3transfer==0.5.0
+        - sqlparse==0.4.2
+        - stripe==2.62.0
 
-    - [Libraries and Frameworks](#libraries-and-frameworks)
-    - [Tools](#tools)
+- [Libraries and Frameworks](#libraries-and-frameworks)
+- [Tools](#tools)
 
 ### Tools
 - [GitHub](https://github.com/) 
@@ -448,11 +445,23 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
 ## Credits
 ### Content
-Code institutes Boutique Ado project
-https://www.youtube.com/watch?v=lSX8nzu9ozg
-https://www.youtube.com/watch?v=fEoQsPvcZGs
-https://getbootstrap.com/docs/5.0/components/collapse/
+- A large portion of this milestone project's code was inspired and taken from Code Institutes Boutique Ado walkthrough. These tutorials were crucial for the skeleton of this site and it's functionality.
+- The add review collapsable component was taken from [here](https://getbootstrap.com/docs/5.0/components/collapse/)
+- Inspiration for my reviews model was taken from this informative [YouTube tutorial](https://www.youtube.com/watch?v=lSX8nzu9ozg)
+- I watched this [YouTube video](https://www.youtube.com/watch?v=fEoQsPvcZGs) to get a deeper understanding of how to create custom error pages
+- [StackOverflow](https://stackoverflow.com/) was an invaluable resource for searching styling issues, python errors etc
+
 ### Media
+- The favicon for this site was taken from [favicon.io](https://favicon.io/)
+- The logo for this site was created on [Free Logo Design](https://www.freelogodesign.org/)
+- The images for this site were all taken from [Unsplash](https://unsplash.com/)
+
 ### Acknowledgements
+- First and foremost, a huge thank you to my brother Gregory for his patience and understanding throughout this entire course. From MS1 to MS4, he was only ever a phonecall away to explain anything I was struggling with. If I haven't said it enough, THANK YOU!!!
+- I would like to thank my mentor Felipe for his guidance throughout these milestone projects. His calm, positive approach always made me feel more confident about my project. 
+- I would like to thank tutor support who I have definitely leaned on a lot more for this milestone project compared to others. They were always quick and efficient at responding to any questions or queries I had!
+- I would like to thank the entire Slack community, past and present. A lot of my problems were solved by searching Slack and seeing someone had the exact same problem a year ago, making it much easier for me to resolve it quickly.
+- A huge thank you to my family and boyfriend for their support throughout this course. They have been so encouraging and understanding from the beginning. This last project has been particularly difficult to juggle but their words of encouragement pushed me on. They have helped test my projects throughout development and have provided feedback on areas of the sites I could improve on!
+- I would like to thank Code Institute for the amazing course matieral and project walkthroughs, making the milestone projects a lot more manageable 
 ### Code
 
