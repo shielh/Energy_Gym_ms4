@@ -81,35 +81,90 @@ We both have similar opinions on how our site shoud look and function. We want a
 
 ### The Structure Plane
 #### Features
-##### Site Wide Features
+#### Site Wide Features
 - Sticky Navbar with site logo  "Energy", directing users back to the home page
 - Navbar containing links to Home, Shop, Contact, Account, Bag and search bar
 - Responsive navbar on mobile device, collapsing into burger icon
+
+<img src="documentation/images/site-navbar.PNG" alt="Site navbar image"> <br>
+
 - Footer containing social links
 
-##### Home Page
+<img src="documentation/images/site-footer.PNG" alt="Site footer image">
+
+#### Home Page
 - Hero-video on landing page
-- Button in middle of video prompting user to sign up 
-- Description of type of products available
 - Button linking to products page
+
+<img src="documentation/images/home-page.PNG" width="668" height="458" alt="Home page image">
+
 - About section giving information about the history of the gym
 - Section including information about the values of the gym 
 
-##### Products Page
+<img src="documentation/images/home-page-about.PNG" width="668" height="458" alt="Home page About section image">
+
+
+#### Products Page
 - Contains headers corresponding to category type of products
 - Contains product images, price, name and description
 - Each product image contains a link to product description page
-- 
+- For admin user, there is an edit and delete button under each image
 
-##### Product Detail Page
+<img src="documentation/images/products-page.PNG" width="956" height="458" alt="Products page image">
+
+#### Product Detail Page
+- Contains a view of the individual product
+- Contains an increment and decrement button to select the quantity of the product
+- Admin view contains an edit and delete button for CRUD functionality of the products
+
+<img src="documentation/images/product_detail_page.PNG" width="956" height="458" alt="Product detail page image">
+
+- Contain an add to bag button and a keep shopping button to bring the user back to the all products view
+- Logged in users and admin users can see an add review button which expands when clicked
+
+<img src="documentation/images/product_detail_page_review.PNG" width="668" height="458" alt="Product detail page review image">
+
+##### Bag Page
+- Contains product information
+- Contains increment and decrement button to adjust quantity of each product
+- Contains update and remove button to either update quantity or completely remove product from bag
+- Contains keep shopping buttong to return the user to the add products view
+- Contains secure checkout button to bring the user to the checkout page
+
+<img src="documentation/images/bag-page.PNG" width="668" height="458" alt="Bag page image">
+
+##### Checkout Page
+- Contains order information with totals
+- Contains form for user details and card information
+- Contains complete order button and adjust bag button
+
+<img src="documentation/images/checkout-page.PNG" width="668" height="458" alt="Checkout page image">
 
 ##### Contact Page
+- The contact page contains a form to complete in order for the user to contact the site owner.
+- When the form has been correctly filled out and submitted a message will be displayed informing the user they have been succesful and they will be directed back to the home page
+- There is a cancel and submit button. The cancel button clears anything that was filled out on the form
+
+<img src="documentation/images/contact-us-page.PNG" width="668" height="458" alt="Contact us page image">
 
 ##### Login Page
+- A Log in form is shown to the user username and password which are validated by django allauth. 
+
+<img src="documentation/images/sign-in-page.PNG" width="956" height="458" alt="Sign in page image">
 
 ##### Sign Up Page
+- A register form is presented to the user which asks for their username, email address and password which are validated by Django allauth. 
+- The password and email must both be entered twice. For the password, it is to ensure it matches or else the user will be notified that their passwords do not match. 
+- The user will then be redirected to a page which prompts them to verify their email address. 
+
+<img src="documentation/images/sign-up.PNG" width="956" height="458" alt="Sign Up page image">
 
 ##### Profile Page
+- This page is automatically created once the user has registered with the site
+- Contains a form with default delivery information which is automatically entered when a user is logged in and processing a payment
+- Contains a section with all previous orders
+
+<img src="documentation/images/profile-page.PNG" width="956" height="458" alt="Profile page image">
 
 ##### Future Features to Implement
 Given the size and complexity of this project, I was unable to add all the features and code I would have liked to. Below is a list of features that I will implement in the 
@@ -119,6 +174,9 @@ future:
 - Add more gym merchandise to include water bottles, shakers and gym hoodies
 - Connect the contact page to send email to site owner as it is currently only appearing on the admin page
 - Add a quick add to bag feature on the all products page for an easier checkout experience
+- Reduce size of images on the products page so they load quicker
+- Include functionality to only charge delivery for merchanise products
+- Include different countries as it currently only serves Irish customers
 
 ---
 ## The Skeleton Plane
