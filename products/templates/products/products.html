@@ -43,8 +43,8 @@
                                     </div>
                                     {% if request.user.is_superuser %}
                                         <small class="ml-3">
-                                            <a class="btn-light product-btn" type="button" href="{% url 'edit_product' product.id %}" >Edit</a> 
-                                            <a class="btn-dark text-white product-btn" type="button" href="{% url 'delete_product' product.id %}">Delete</a>
+                                            <a class="btn-light product-btn" href="{% url 'edit_product' product.id %}" >Edit</a> 
+                                            <a class="btn-dark text-white product-btn" href="{% url 'delete_product' product.id %}">Delete</a>
                                         </small>
                                     {% endif %}
                                 </div>
