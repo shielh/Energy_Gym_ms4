@@ -8,7 +8,7 @@ html{
 body{
     position: relative;
     min-height: 100%;
-    padding-bottom: 14rem;
+    padding-bottom: 5rem;
 }
 
 .container{
@@ -54,10 +54,10 @@ p {
 }
 
 .img-button {
-    position: absolute;
+    position: fixed;
     background-color: rgba(0, 0, 0, .5);
     left: 50%;
-    bottom: 33%;
+    top: 5%;
 }
 
 .btn-outline-light:hover{
