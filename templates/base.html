@@ -96,8 +96,8 @@
           </form>
           <ul style="margin: 2px 0;">
             <li class="list-inline-item dropdown">
-              <a class="text-black nav-link nav-link-icon" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true"
-                aria-expanded="false">
+              <a class="text-black nav-link nav-link-icon" href="#" id="user-options" data-bs-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                   <div><i class="fas fa-user fa-md account-icon"></i></div>
                   <p class="my-0 text-white">Account</p>
@@ -131,7 +131,7 @@
                 </div>
               </a>
             </li>
-            
+
           </ul>
 
         </div>
@@ -173,26 +173,26 @@
   {% block content %}
   {% endblock %}
   <!--Footer content-->
-  <footer class = "container-fluid page-footer navbar-dark bg-dark">
+  <footer class="container-fluid page-footer navbar-dark bg-dark">
     <div class="row">
-       <div class="col-12 text-center mt-3">
-          <h5 class=" foot-header text-white">Energy Gym &copy;</h5>
-       </div>
-       <!--Social Media Links-->
-       <div class="col-12 text-center footer-icons mb-3">
-          <ul class="list-inline">
-             <li><a href="https://www.facebook.com/" class="footer-icon" rel="noopener" target="_blank"><i
+      <div class="col-12 text-center mt-3">
+        <h5 class=" foot-header text-white">Energy Gym &copy;</h5>
+      </div>
+      <!--Social Media Links-->
+      <div class="col-12 text-center footer-icons mb-3">
+        <ul class="list-inline">
+          <li><a href="https://www.facebook.com/" class="footer-icon" rel="noopener" target="_blank"><i
                 class="fab fa-facebook-square"><span class="sr-only">Facebook</span></i></a></li>
-             <li><a href="https://www.instagram.com/" class="footer-icon" rel="noopener" target="_blank">
-                <i class="fab fa-instagram "><span class="sr-only">Instagram</span></i></a>
-             </li>
-             <li><a href="{% url 'contact_form' %}" rel="noopener" class="footer-icon">
-                <i class="fas fa-envelope "><span class="sr-only">Contact</span></i></a>
-             </li>
-          </ul>
-       </div>
+          <li><a href="https://www.instagram.com/" class="footer-icon" rel="noopener" target="_blank">
+              <i class="fab fa-instagram "><span class="sr-only">Instagram</span></i></a>
+          </li>
+          <li><a href="{% url 'contact_form' %}" rel="noopener" class="footer-icon">
+              <i class="fas fa-envelope "><span class="sr-only">Contact</span></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
- </footer>
+  </footer>
 
 
   {% block postloadjs %}
@@ -200,11 +200,11 @@
   <script>
     let toastElList = [].slice.call(document.querySelectorAll('.toast'))
     let toastList = toastElList.map(function (toastEl) {
-        let option = {
-            animation: true,
-            autohide: true,
-            delay: 5000,
-        }
+      let option = {
+        animation: true,
+        autohide: true,
+        delay: 5000,
+      }
       let bsToast = new bootstrap.Toast(toastEl, option)
       bsToast.show();
     })
