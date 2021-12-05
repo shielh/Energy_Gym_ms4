@@ -27,16 +27,18 @@ def all_products(request):
                 messages.error(request, "You didn't enter anything!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | Q(
+                description__icontains=query)
             products = products.filter(queries)
 
-        # only show categories that have a product 
-        categories = categories.filter(name__in=[p.category.name for p in products])
+        # only show categories that have a product
+        categories = categories.filter(
+            name__in=[p.category.name for p in products])
 
     # Links products to category name for heading
     category_products = {c.name: (c, []) for c in categories}
     for product in products:
-        category_products[product.category.name][1].append(product)            
+        category_products[product.category.name][1].append(product)
 
     context = {
         'category_products': category_products,
@@ -76,8 +78,8 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the'
-                           + ' form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the\
+                                     form is valid.')
     else:
         form = ProductForm()
 

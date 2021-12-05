@@ -44,4 +44,3 @@ class ReviewForm(forms.ModelForm):
                 self.fields[field].label = False
 
             self.fields[field].widget.attrs['class'] = 'form-control'
-
