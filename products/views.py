@@ -103,7 +103,7 @@ def edit_product(request, product_id):
         form = ProductForm(request.POST, request.FILES, instance=product)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Successfully updated product!')
+            messages.info(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
             messages.error(request, 'Failed to update product. Please ensure' +
@@ -130,7 +130,7 @@ def delete_product(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
-    messages.success(request, 'Product deleted!')
+    messages.info(request, 'Product deleted!')
     return redirect(reverse('products'))
 
 
@@ -149,7 +149,7 @@ def add_review_to_product(request, product_id):
                 title=title,
                 rating=rating,
                 comments=comments)
-            messages.success(request, 'Successfully added review.')
+            messages.info(request, 'Successfully added review.')
             return redirect(reverse('product_detail', args=[product_id]))
         else:
             messages.error(request, 'Failed to add review. \
@@ -185,7 +185,7 @@ def add_review(request):
             review = form.save(commit=False)
             review.user = UserProfile.objects.get(user=request.user)
             form.save()
-            messages.success(
+            messages.info(
                 request, 'Your review has been successfully added!')
             return redirect('reviews')
         else:
@@ -207,5 +207,5 @@ def delete_review(request, review_id):
     """
     review = get_object_or_404(Review, pk=review_id)
     review.delete()
-    messages.success(request, 'Review deleted!')
+    messages.info(request, 'Review deleted!')
     return redirect(reverse('product_detail', args=(review.product.id,)))
