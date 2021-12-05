@@ -1,10 +1,10 @@
 ## Table of Contents
-* [Automated Testing](#Automated-Testing)
+* [Testing](#Testing)
     * [Responsivity across devices](#Responsivity-across-devices)
     * [HTML CSS and Python Testing](#HTML-CSS-and-Python-Testing)
     * [Web Accessibility](#Web-Accessibility)
 
-* [Manual Testing](#Manual-Testing)
+* [User Story Testing](#User-Story-Testing)
     * [Test Case 1](#Test-Case-1)
     * [Test Case 2](#Test-Case-2)
     * [Test Case 3](#Test-Case-3)
@@ -20,7 +20,7 @@
     * [Test Case 13](#Test-Case-13)
 * [Issues and Solutions](#Issues-and-Solutions)
 
-## Automated Testing
+## Testing
 ### Responsivity across devices
 * As a user, I want the website to be responsive across all devices
 This test allowed me to ensure the user story for responsivity was met
@@ -36,21 +36,28 @@ This test allowed me to ensure the user story for responsivity was met
 ### HTML CSS and Python Testing
 1. W3C HTML Validator
 - I opened [W3C HTML Validator](https://validator.w3.org/) and selected the "Validate by URI" option and paste each html page
+- I received a minor error about the a element having a type="button" so I removed this from my HTML files
+- After fixing this error, I received the following message about all my HTML files:
+<img src="documentation/images/html-validator.PNG" alt="HTML check">
+
 ---
 2. Similarly, I ran the code through the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) 
-- I selected the "by Direct Input" option and pasted my style.css and responsive.css code in
-- I received the message:
-
+- I selected the "by Direct Input" option and pasted all my css files code in separately
+- I received the following message for all:
+<img src="documentation/images/css-validator.PNG" alt="CSS check">
 
 ---
 3. Python PEP8 Compliant
-I copy and pasted the code in my app.py file into the text box on [PEP8 site](http://pep8online.com/) and it returned this message of no errors:
-<img src="static/images/testing/pep8checker.PNG" alt="WeddingApp PEP8 check">
+I copy and pasted the code of all my files ending in .py into the text box on [PEP8 site](http://pep8online.com/) 
+- I had a few minor errors of the lines being too long which I fixed
+- Then it returned this message of no errors:
+<img src="documentation/images/PEP8-Check.PNG" alt="PEP8 check">
 ---
 
 ### Web Accessibility
 I tested the sites homepage on [Web Accessibility](https://www.webaccessibility.com/) to ensure the site was able to be used by people with disabilities 
-and received the following result:
+and received at least 93% across all pages:
+<img src="documentation/images/web-accesibility-check.PNG" alt="Web accessibility check">
 
 ---
 

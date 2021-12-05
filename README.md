@@ -5,7 +5,7 @@ The live version of the site is available [here](https://energy-gym-ms4.herokuap
 This project was created for my fourth and final Milestone Project with Code Institute in order to display my knowledge and understanding 
 of HTML, CSS, JavaScript, Python+Django, MySQL and Stripe payments.
 
-I remember I really wanted to create a website for a gym for my first project but I held out until now to complete it so I could add the features I wanted to add and have it looking as professional as possible. As someone who is equally passionate about fitness and technology, I know the huge effect a good website can have on the perception of your business. Down the line, I would love to be able to open my own fitness studio so this project is going to be the first step in acheiving that goal. I want this site to be simple and sleek with strong images and minimal text. This site will be the place users come to sign up easily and be able to purchase their membership option. The members will also be able to leave reviews on the gym and the products to create a community feel where feedback is always appreciated.
+I remember I really wanted to create a website for a gym for my first project but I held out until now to complete it so I could add the features I wanted to add and have it looking as professional as possible. As someone who is equally passionate about fitness and technology, I know the huge effect a good website can have on the perception of your business. Down the line, I would love to be able to open my own fitness studio so this project is going to be the first step in acheiving that goal. I want this site to be simple and sleek with strong images and minimal text. This site will be the place users come to sign up easily for quicker checkout experience and be able to purchase their membership option. The members will also be able to leave reviews on the gym and the products to create a community feel where feedback is always appreciated and listened to.
 
 ---
 
@@ -13,7 +13,6 @@ I remember I really wanted to create a website for a gym for my first project bu
 * [User Experience](#User-Experience)
     * [The Strategy Plane](#The-Strategy-Plane)
         * [User stories](#User-Stories)
-    * [The Scope Plane](#The-Scope-Plane)
     * [The Structure Plane](#The-Structure-Plane)
     * [The Skeleton Plane](#The-Skeleton-Plane)
         * [Wireframes](#Wireframes)
@@ -24,10 +23,17 @@ I remember I really wanted to create a website for a gym for my first project bu
             * [Images](#Images)
             * [Colour Scheme](#colour-scheme)
 * [Features](#Features)
+    - [Site Wide Features](#Site-Wide-Features)
+    - [Home Page](#Home-Page)
+    - [Products Page](#Products-Page)
+    - [Product Detail Page](#Product-Detail-Page)
+    - [Contact Page](#Contact-Page)
+    - [Login Page](#Login-Page)
+    - [Sign Up Page](#Sign-Up-Page)
+    - [Profile Page](#Profile-Page)
     - [Future Features to Implement](#future-features-to-implement)
 * [Technologies Used](#Technologies-Used)
     - [Languages](#languages)
-    - [Libraries and Frameworks](#libraries-and-frameworks)
     - [Tools](#tools)
 * [Testing](#testing)
 * [Security](#security)
@@ -71,32 +77,51 @@ We both have similar opinions on how our site shoud look and function. We want a
 ### User stories - Admin
 - As an admin user, I want to be able to add, edit and delete products on the site
 - As an admin user, I want to be able to delete reviews that might contain harmful or inappropriate content
-- As an admin user, I want to be
+- As an admin user, I want to prevent unauthorized users from having access to Admin content and other users' profiles.
 
-### The Scope Plane
+### The Structure Plane
 #### Features
 ##### Site Wide Features
-- Navbar with site logo  "Energy", directing users back to the home page
-- Navbar containing links to Home, Shop, Contact, Account and Cart
-- Navbar containing search bar
+- Sticky Navbar with site logo  "Energy", directing users back to the home page
+- Navbar containing links to Home, Shop, Contact, Account, Bag and search bar
 - Responsive navbar on mobile device, collapsing into burger icon
+- Footer containing social links
 
-##### Home page
+##### Home Page
 - Hero-video on landing page
 - Button in middle of video prompting user to sign up 
 - Description of type of products available
 - Button linking to products page
+- About section giving information about the history of the gym
+- Section including information about the values of the gym 
 
-##### Products page
+##### Products Page
 - Contains headers corresponding to category type of products
 - Contains product images, price, name and description
 - Each product image contains a link to product description page
 - 
 
-##### Future Features to Implement
-Given the size and complexity of this project, I was unable to add all the features and code I would have liked to. 
+##### Product Detail Page
 
-### The Skeleton Plane
+##### Contact Page
+
+##### Login Page
+
+##### Sign Up Page
+
+##### Profile Page
+
+##### Future Features to Implement
+Given the size and complexity of this project, I was unable to add all the features and code I would have liked to. Below is a list of features that I will implement in the 
+future:
+- Class timetable model and template where users can book in to a variety of fitness classes
+- Functionality to only allow users to book a membership for the stated duration of time 
+- Add more gym merchandise to include water bottles, shakers and gym hoodies
+- Connect the contact page to send email to site owner as it is currently only appearing on the admin page
+- Add a quick add to bag feature on the all products page for an easier checkout experience
+
+---
+## The Skeleton Plane
 #### Wireframes
 
 The wireframes were created using [Balsamiq wireframes](https://balsamiq.com/)
@@ -138,6 +163,7 @@ The wireframe mockup links can be found below:
 
 #### Database Schema
 
+<img src="documentation/images/lucid-data-schema.PNG" alt="Image of data schema">
 
 #### Key Models 
 
@@ -169,45 +195,62 @@ Reviews
 Contact
 - This model allows users, both registered and unregistered, to contact the site owners with any questions and queries
 
+---
+## The Surface Plane
+### Design
+#### Font
+Using the <a href="https://fontpair.co/">Font Pair</a> website, I chose two complimentary fonts; <a href="https://fonts.google.com/specimen/Asap">Asap</a> 
+for the headings, and <a href="https://fonts.google.com/specimen/Roboto">Roboto</a> for the rest of the text.
 
+#### Images
+All the images on the site are taken from [Unsplash](https://unsplash.com/) and are of either people working out in a gym environment or of gym equipment
+
+#### Colour Scheme
+I used [BootsWatch](https://bootswatch.com/) Darkly theme for my Bootstrap website, specifically for the navbar and buttons. Please see the image below for the colour scheme:
+
+<img src="documentation/images/bootswatch-darkly.PNG" alt="Bootswatch Darkly Colour Scheme">
+
+I also added elements of #57753c, a green colour to match the green on the sole of the shoe in the hero image.
+
+---
 ## Technologies Used
-### Languages
-This project is primarily built using HTML5 semantic markup, CSS, Javascript, Python, Django, SQLite and Heroku Postgres.
-- [Python](https://www.python.org/) 
-    - The following were additionally used:
-        - asgiref==3.4.1
-        - boto3==1.20.10
-        - botocore==1.23.10
-        - crispy-bootstrap5==0.6
-        - dj-database-url==0.5.0
-        - Django==3.2.8
-        - django-allauth==0.41.0
-        - django-crispy-forms==1.13.0
-        - django-storages==1.12.3
-        - gunicorn==20.1.0
-        - jmespath==0.10.0
-        - oauthlib==3.1.1
-        - Pillow==8.4.0
-        - psycopg2-binary==2.9.2
-        - python3-openid==3.2.0
-        - pytz==2021.3
-        - requests-oauthlib==1.3.0
-        - s3transfer==0.5.0
-        - sqlparse==0.4.2
-        - stripe==2.62.0
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+    - The project uses **HTML** as the main language for structuring the content
+- [CSS3](https://en.wikipedia.org/wiki/CSS) 
+    - The project uses **CSS** for styling the sites content
+- [Django](https://docs.djangoproject.com/en/3.1/)
+    - Django was used as the main python framework in the building of this project.
+- [jQuery](https://jquery.com/)
+    - This framework was used to create some of the site's interactive functions.
+- [Python](https://www.python.org/)
+    - This project uses **Python** for the backend of the website
 
-- [Libraries and Frameworks](#libraries-and-frameworks)
-- [Tools](#tools)
-
+        - The following were additionally used:
+            - asgiref==3.4.1
+            - boto3==1.20.10
+            - botocore==1.23.10
+            - crispy-bootstrap5==0.6
+            - dj-database-url==0.5.0
+            - Django==3.2.8
+            - django-allauth==0.41.0
+            - django-crispy-forms==1.13.0
+            - django-storages==1.12.3
+            - gunicorn==20.1.0
+            - jmespath==0.10.0
+            - oauthlib==3.1.1
+            - Pillow==8.4.0
+            - psycopg2-binary==2.9.2
+            - python3-openid==3.2.0
+            - pytz==2021.3
+            - requests-oauthlib==1.3.0
+            - s3transfer==0.5.0
+            - sqlparse==0.4.2
+            - stripe==2.62.0
 ### Tools
 - [GitHub](https://github.com/) 
     - This is the hosting site where I first created the repository for this webpage and also where the live site is deployed from 
 - [Git](https://git-scm.com/) 
     - This is the version control software used where can I commit and push the updated information to the hosting website GitHub
-- [Django](https://docs.djangoproject.com/en/3.1/)
-    - Django was used as the main python framework in the building of this project.
-- [jQuery](https://jquery.com/)
-    - This framework was used to create some of the site's interactive functions.
 - [BootsWatch](https://bootswatch.com/)
     - This was used as a theme for Bootstrap
 - [PyMongo](https://pymongo.readthedocs.io/)
@@ -233,6 +276,8 @@ This project is primarily built using HTML5 semantic markup, CSS, Javascript, Py
     site layout
 - [PEP8 Online](http://pep8online.com/)
     - This was used to check for PEP8 compliance
+- [JSHint](https://jshint.com/)
+    - This was used to check my javascript code
 - [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
     - This was used to test the CSS code for any errors
 - [W3C Markup validator](https://validator.w3.org/)
@@ -251,6 +296,8 @@ This project is primarily built using HTML5 semantic markup, CSS, Javascript, Py
     - This was used to test the responsiveness of the site and also to create the mock-up image at the top of this document.
 - [Lucid](https://lucid.app/documents#/dashboard)
     - This was used to create the Database Schema presented in this document.
+- [Google Fonts](https://fonts.google.com/) 
+    - This was used to import the two fonts for this site, Asap and Roboto
 
 
 [Back to top](#Table-of-Contents)
@@ -265,7 +312,7 @@ The testing documentation can be found [here](TESTING.md)
 ## Security 
 I have stored all sensitive information in my env.py file which is ignored. Any user that registers an account will have their password undergo password hashing as an extra security measure. A lot of the sites features can only be access by admin users such as the CRUD functionality for the products page.
 
-
+---
 ## Deployment 
 ### Initial Creation
 Wedding App was first created by completing the following steps on GitHub:
@@ -437,12 +484,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 
     -pip install -r requirements.txt
 
-
-* [Credits](#credits)
-    * [Content](#content)
-    * [Media](#media)
-    * [Acknowledgements](#acknowledgements)
-
+---
 ## Credits
 ### Content
 - A large portion of this milestone project's code was inspired and taken from Code Institutes Boutique Ado walkthrough. These tutorials were crucial for the skeleton of this site and it's functionality.
@@ -463,5 +505,7 @@ Once the project been loaded into the IDE it is necessary to install the necessa
 - I would like to thank the entire Slack community, past and present. A lot of my problems were solved by searching Slack and seeing someone had the exact same problem a year ago, making it much easier for me to resolve it quickly.
 - A huge thank you to my family and boyfriend for their support throughout this course. They have been so encouraging and understanding from the beginning. This last project has been particularly difficult to juggle but their words of encouragement pushed me on. They have helped test my projects throughout development and have provided feedback on areas of the sites I could improve on!
 - I would like to thank Code Institute for the amazing course matieral and project walkthroughs, making the milestone projects a lot more manageable 
-### Code
 
+---
+
+[Back to top](#Table-of-Contents)
