@@ -1,15 +1,15 @@
 /* Media Queries */
 @media (max-width: 768px){
     .home-img {
-        background: url('/media/hero_image_mobile.jpg') no-repeat center center fixed;
-        background-size: cover;
+        background: url('/media/hero_image_mobile.jpg') no-repeat center center;
+        background-size: contain;
         padding: 0;
         height: 73vh;
     }
     .img-button{
         position: absolute;
         left: 33%;
-        bottom: 50%;
+        top: 15%;
     }
     .contact-image{
         display: none;
